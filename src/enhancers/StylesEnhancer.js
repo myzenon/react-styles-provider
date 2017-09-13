@@ -7,7 +7,6 @@ import { applyTransformations, omit } from '../utils'
 import { contextTypes, contextNamespace } from '../constants'
 
 import resolveFunctions from '../transformations/resolveFunctions'
-import prefixStyles from '../transformations/prefixStyles'
 import flattenArrays from '../transformations/flattenArrays'
 import replaceReferences from '../transformations/replaceReferences'
 
@@ -15,7 +14,6 @@ const defaultOptions = {
   withRef: false,
   transformations: [
     resolveFunctions,
-    prefixStyles,
     replaceReferences,
     flattenArrays,
   ],
